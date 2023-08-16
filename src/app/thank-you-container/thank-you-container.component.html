@@ -1,0 +1,14 @@
+<div class="thank-you hidden">
+  <img src="./images/illustration-thank-you.svg" alt="" />
+  <p class="gray">
+    You selected
+    <span id="rating" style="display: inline-block; margin: 0 0.3rem">{{ selectedRating }}</span>
+    out of 5
+  </p>
+  <h2>Thank you!</h2>
+  <p>
+    We appreciate you taking the time to give a rating. If you ever need
+    more support, don’t hesitate to get in touch!
+  </p>
+  <button class="btn-submit" (click)="rateAgain()">Rate Again</button>
+</div>
