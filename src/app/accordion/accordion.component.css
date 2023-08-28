@@ -48,6 +48,15 @@ body {
   padding: 2rem;
 }
 
+.normalText {
+  font-weight: normal;
+}
+
+.greyText {
+  color: hsl(214, 17%, 51%);
+  padding: 1rem;
+}
+
 
 button {
   outline: none;

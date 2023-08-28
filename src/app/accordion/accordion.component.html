@@ -19,7 +19,7 @@
       <div class="text" *ngFor="let item of faqItems; let i = index">
         <div class="question">
           <button (click)="openClose(i)">
-            <div class="boldText">{{ item.question }}</div>
+            <div [class.boldText]="!answerStates[i]">{{ item.question }}</div>
             <img
               src="../../assets/accordion/icon-arrow-down.svg"
               alt=""
@@ -27,7 +27,7 @@
             />
           </button>
         </div>
-        <div class="answer" [class.answer]="!answerStates[i]">
+        <div class="answer greyText" [class.answer]="!answerStates[i]">
           <p>{{ item.answer }}</p>
         </div>
       </div>

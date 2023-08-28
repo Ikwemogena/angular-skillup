@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+
+
 :root {
   --Light-grey: hsl(0, 0%, 86%);
   --Smokey-grey: hsl(0, 1%, 44%);
@@ -6,7 +10,7 @@
 }
 
 * {
-  font-family: Pop !important;
+  font-family: Poppins;
 }
 body {
   display: flex;
@@ -14,6 +18,7 @@ body {
   background-color: hsl(0, 0%, 94%);
   align-items: center;
   min-height: 100vh;
+  font-family: Pop !important;
 }
 .container {
   background-color: hsl(0, 0%, 100%);
@@ -28,6 +33,7 @@ input {
   padding: 10px;
   border-radius: 5px;
   border: 2px solid hsl(0, 0%, 94%);
+  margin: 0.8rem 0;
   /* border: none; */
   outline: none;
 }
@@ -52,15 +58,20 @@ small {
   border: none;
   border-radius: 50%;
   position: absolute;
-  right: 30px;
-  top: 60px;
+  /* right: 30px;
+  top: 60px; */
+  right: 20px;
+  top: 98px;
   cursor: pointer;
 }
 .submit-btn:hover {
   background-color: black;
 }
+.output {
+  font-size: 2.2rem;
+}
 .output span {
-  font-size: 2.75rem;
+  /* font-size: 3.75rem; */
   color: hsl(259, 100%, 65%);
   font-style: italic;
 }
@@ -75,9 +86,19 @@ small {
   border-bottom: 2px solid hsl(0, 0%, 94%);
   margin-bottom: 20px;
 }
+
+.input-container span {
+  color: hsl(0, 1%, 44%);
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
 @media (max-width: 768px) {
+  .container {
+    max-width: 92%;
+  }
   input {
-    width: 80%;
+    width: 92%;
   }
   .output span {
     font-size: 1.75rem;

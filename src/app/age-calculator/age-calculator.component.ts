@@ -12,13 +12,13 @@ export class AgeCalculatorComponent {
   dayError: string = '';
   monthError: string = '';
   yearError: string = '';
-  ageYears: number = 0;
-  ageMonths: number = 0;
-  ageDays: number = 0;
+  ageYears: any = "- -";
+  ageMonths: any = "- -";
+  ageDays: any = "- -";
 
   validateDay() {
     if (this.day > 31) {
-      this.dayError = 'Must be a valid date';
+      this.dayError = 'Must be a valid day';
     } else {
       this.dayError = '';
     }
@@ -26,7 +26,7 @@ export class AgeCalculatorComponent {
 
   validateMonth() {
     if (this.month > 12) {
-      this.monthError = 'Must be a valid date';
+      this.monthError = 'Must be a valid month';
     } else {
       this.monthError = '';
     }
@@ -34,7 +34,7 @@ export class AgeCalculatorComponent {
 
   validateYear() {
     if (this.year > 2023) {
-      this.yearError = 'Must be a valid date';
+      this.yearError = 'Must be in the past';
     } else {
       this.yearError = '';
     }
