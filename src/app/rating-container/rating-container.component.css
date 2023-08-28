@@ -86,6 +86,13 @@ button {
   color: hsl(25, 97%, 53%);
 }
 
+.center__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
 .container,
 .thank-you {
   background-image: linear-gradient(

@@ -1,5 +1,7 @@
-<div class="container" *ngIf="!ratingSubmitted">
-  <img src="./images/icon-star.svg" alt="" />
+<body>
+  
+  <div class="container" *ngIf="!ratingSubmitted">
+     <img src="../../assets/rating-card/icon-star.svg" alt="" />
   <h1>How did we do?</h1>
   <p>
     Please let us know how we did with your support request. All feedback is
@@ -15,3 +17,5 @@
   <button class="btn-submit" (click)="submitRating()">Submit</button>
 </div>
 <app-thank-you-container *ngIf="ratingSubmitted" [selectedRating]="selectedRating" (rateAgainClicked)="resetRating()"></app-thank-you-container>
+
+</body>

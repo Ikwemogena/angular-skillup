@@ -6,25 +6,10 @@
 
 main {
   margin: 6rem 15% 0 15%;
+  min-height: 100vh;
 }
 
-@media (max-width: 1200px) {
-  main {
-    margin: 6rem 10% 0 10%;
-  }
-}
 
-@media (max-width: 1056px) {
-  main {
-    margin: 4rem 5% 0 5%;
-  }
-}
-
-@media(max-width: 900px){
-  main {
-    margin: 4rem 5%;
-  }
-}
 
 /* Setting the background */
 .background {
@@ -131,6 +116,24 @@ main {
   background: hsl(300, 43%, 22%);
   padding: 2rem;
   border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  main {
+    margin: 6rem 10% 0 10%;
+  }
+}
+
+@media (max-width: 1056px) {
+  main {
+    margin: 4rem 5% 0 5%;
+  }
+}
+
+@media(max-width: 900px){
+  main {
+    margin: 4rem 5%;
+  }
 }
 
 @media (max-width: 900px) {
