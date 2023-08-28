@@ -12,6 +12,12 @@ import { ResultsComponent } from './results/results.component';
 import { StatsPreviewComponent } from './stats-preview/stats-preview.component';
 import { RatingContainerComponent } from './rating-container/rating-container.component';
 import { ThankYouContainerComponent } from './thank-you-container/thank-you-container.component';
+import { AgeCalculatorComponent } from './age-calculator/age-calculator.component';
+import { FormsModule } from '@angular/forms';
+import { FormComponentComponent } from './form-component/form-component.component';
+import { SocialProofComponent } from './social-proof/social-proof.component';
+import { ArticlePreviewComponent } from './article-preview/article-preview.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 const appRoutes: Routes = [
   { path: '', component: NftComponent },
@@ -20,6 +26,12 @@ const appRoutes: Routes = [
   { path: 'results', component: ResultsComponent },
   { path: 'stats', component: StatsPreviewComponent },
   { path: 'rating', component: RatingContainerComponent },
+
+  { path: 'age', component: AgeCalculatorComponent },
+  { path: 'form', component: FormComponentComponent },
+  { path: 'social', component: SocialProofComponent },
+  { path: 'article', component: ArticlePreviewComponent },
+  {path: 'accordion', component: AccordionComponent}
 ]
 
 @NgModule({
@@ -32,11 +44,17 @@ const appRoutes: Routes = [
     ResultsComponent,
     StatsPreviewComponent,
     RatingContainerComponent,
-    ThankYouContainerComponent
+    ThankYouContainerComponent,
+    AgeCalculatorComponent,
+    FormComponentComponent,
+    SocialProofComponent,
+    ArticlePreviewComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

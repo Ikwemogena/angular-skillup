@@ -1,0 +1,38 @@
+<body>
+  <div class="main">
+    <div class="images">
+      <div class="imagesOne">
+        <img src="../../assets/accordion/illustration-box-desktop.svg" alt="" />
+      </div>
+      <div class="imagesTwo">
+        <img
+          src="../../assets/accordion/illustration-woman-online-mobile.svg"
+          alt=""
+        />
+      </div>
+      <div class="imagesThree">
+        <img src="../../assets/accordion/bg-pattern-mobile.svg" alt="" />
+      </div>
+    </div>
+    <div class="faq">
+      <h1>FAQ</h1>
+      <div class="text" *ngFor="let item of faqItems; let i = index">
+        <div class="question">
+          <button (click)="openClose(i)">
+            <div class="boldText">{{ item.question }}</div>
+            <img
+              src="../../assets/accordion/icon-arrow-down.svg"
+              alt=""
+              [class.imgArrow]="answerStates[i]"
+            />
+          </button>
+        </div>
+        <div class="answer" [class.answer]="!answerStates[i]">
+          <p>{{ item.answer }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
