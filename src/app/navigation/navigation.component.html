@@ -1,6 +1,6 @@
-<div class="header">
+<!-- <div class="header">
     <h1>landing.</h1>
-    <div class="nav">
+    <div class="nav" id="mobileNav">
         <a routerLink="/">NFT</a>
         <a routerLink="/product">Product</a>
         <a routerLink="/order">Order</a>
@@ -12,6 +12,66 @@
         <a routerLink="/social">Social Proof</a>
         <a routerLink="/article">Article</a>
         <a routerLink="/accordion">Accordion</a>
-
     </div>
-</div>
+    <button id="mobileNavToggle" onclick="toggleMobileNav()">Menu</button>
+</div> -->
+
+
+<!-- <div class="header">
+    <h1>landing.</h1>
+    <button (click)="toggleMobileNav()">Menu</button>
+    <div class="nav" [ngClass]="{'mobile-nav-open': isMobileNavOpen}">
+        <a routerLink="/">NFT</a>
+        <a routerLink="/product">Product</a>
+        <a routerLink="/order">Order</a>
+        <a routerLink="/results">Results</a>
+        <a routerLink="/rating">Rating</a>
+        <a routerLink="/stats">Stats</a>
+        <a routerLink="/age">Age Calculator</a>
+        <a routerLink="/form">Form Component</a>
+        <a routerLink="/social">Social Proof</a>
+        <a routerLink="/article">Article</a>
+        <a routerLink="/accordion">Accordion</a>
+    </div>
+</div> -->
+
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a routerLink="/"><li>NFT</li></a>
+        <a routerLink="/product"><li>Product</li></a>
+        <a routerLink="/order"><li>Order</li></a>
+        <a routerLink="/results"><li>Results</li></a>
+        <a routerLink="/rating"><li>Rating</li></a>
+        <a routerLink="/stats"><li>Stats</li></a>
+        <a routerLink="/age"><li>Age Calculator</li></a>
+        <a routerLink="/form"><li>Form Component</li></a>
+        <a routerLink="/social"><li>Social Proof</li></a>
+        <a routerLink="/article"><li>Article</li></a>
+        <a routerLink="/accordion"><li>Accordion</li></a>
+    </ul>
+  </div>
+</nav>

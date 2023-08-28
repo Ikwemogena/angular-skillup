@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent {
+  isMobileNavOpen: boolean = false;
+
+  toggleMobileNav() {
+    this.isMobileNavOpen = !this.isMobileNavOpen;
+  }
 
 }
